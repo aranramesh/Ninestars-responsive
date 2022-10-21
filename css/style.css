@@ -266,14 +266,93 @@ background-color: #fef8f5;
         padding: 9px;
     }
 }
+.services{
+    background-color: #fef8f5;
+}
+hr{
+    color: orange;
+    width: 55px;
+    height: 0px;
+
+}
 .services h1{
     text-align: center;
     font-size: 30px;
     margin: auto;
+    font-family: Arial, Helvetica, sans-serif;
+    width:85% ;
+
+}
+.services h4{
+    text-align: center;
+    color: lightgray;
+    font-size: 23px;
+    padding: 8px;
+}
+.service-secs{
+    height: 214px;
+    background: #fff;
+    width: 80%;
+    margin: auto;
+    border-radius: 17px;
+    margin-top: 12px;
+    box-shadow: 0 10px 29px 0 rgb(68 88 144 / 10%)
 
 }
 .services h3{
     text-align: center;
-    color: lightgray;
     font-size: 23px;
+    color: black;
+    padding: 8px;   
+}
+.services p{
+    text-align: center;
+    font-size: 16px;
+    color: black;
+    padding: 15px;
+}
+.serv-ico{
+    color: #f39e7a;
+    font-size: 30px;
+    justify-content: center;
+    display: flex;
+    padding: 8px;
+}
+@media screen and (min-width:768px) {
+    .ser{
+        display: flex;
+    }
+    .ser .service-secs{
+        width: 45%;
+        margin-top: 20px;
+
+    }
+   
+}
+@media screen and (min-width:1200px) {
+    .serv-flex{
+        display: flex;
+    }
+    .ser .service-secs{
+        width: auto;
+        margin: 10px;
+        height: 214px;
+        background: #fff;
+        border-radius: 17px;
+        margin-top: 12px;
+        box-shadow: 0 10px 29px 0 rgb(68 88 144 / 10%)
+    }
+    .services h3{
+        text-align: center;
+        font-size: 25px;
+        color: black;
+        padding: 8px;   
+    }
+    .services p{
+        text-align: center;
+        font-size: 18px;
+        color: black;
+        padding: 15px;
+    }
+
 }
