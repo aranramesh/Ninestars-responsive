@@ -389,39 +389,12 @@ hr{
     top: 50%;
     left: 45%;
 }
-.portfolio-icons{
-    position: absolute;
-    right: -181px;
-    border-radius: 18px;
-    top: -143px;
-    background-color: currentColor;
-    height: 286px;
-    width:387px;
-    color: rgba(0, 0, 0, 0.41);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    /* opacity: 0; */
-    transition: all 0.5s ease;
 
-}
 .txt h5{
     font-size: 20px;
     color: #fff;
     z-index: 999999999;
     margin-top: 17px;
-}
-.portfolio-icons a{
-    display: block;
-    width: 20px;
-    height: 20px;
-    background-color: #fff;
-    border-radius: 100%;
-    text-align: center;
-    text-decoration: none;
-    line-height: 20px;
-    margin-top: 12px;
-    text-decoration: none;
 }
 .portfolio-box img{
     width: 90%;
@@ -430,6 +403,19 @@ hr{
     display: block;
     border-radius: 25px;
     padding: 12px;
-
-
+}
+@media screen and (min-width:768px) {
+    .port-1{
+        display: flex;
+    }
+}
+@media screen and (min-width:1200px) {
+    .port-2{
+        display: flex;
+        flex-wrap:wrap;
+    }
+    .portfolio-box {
+        width: 33.33%;
+    }
+    
 }
