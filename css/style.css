@@ -9,8 +9,8 @@ h1,h2,h3,h4,h5,h6{
 }
 a:hover{
     color: orangered;
-}
-/* .back{
+/* }
+ .back{
     background: #fff; 
     box-shadow: 0 0 10px #999;
     width: 100%;
@@ -78,8 +78,8 @@ a:hover{
 
 
 
-/* banner starts */
-/* .banner-section{
+/* banner starts 
+.banner-section{
 background-color: #fef8f5;
 }
 .ban{
@@ -178,8 +178,8 @@ background-color: #fef8f5;
 }
 .ban-img {
     width: 100%;
-}
 } */
+}
 .vol-img {
     align-items: center;
     display: flex;
@@ -359,63 +359,643 @@ hr{
     }
 
 }
-.port-sec button{
-    border: none;
-    background: #fff;
-    padding-right: 15px;
-}
-.port-sec h1{
+/* portfolio starts */
+
+#portfolio {
+    display: flex;
+    background-color: #f5f9fc;
     text-align: center;
-    font-size: 30px;
-    font-family: Arial, Helvetica, sans-serif;
-    width:85% ;
-    margin: auto;
-
-}
-.port-sec h4{
-    text-align: center;
-    color: lightgray;
-    font-size: 23px;
-    padding: 8px;
-    margin: auto;
-
-}
-
-.portfolio-box{
+    width: 100%;
+  }
+  .portfoliocontent h2 {
+    justify-content: center;
+    font-size: 24px;
+    font-weight: 700;
+    padding-bottom: 0;
+    line-height: 1px;
+    margin-bottom: 15px;
+    color: #c2b7b1;
+  }
+  .portfoliocontent h1 {
+    padding-bottom: 10px;
+    margin-bottom: 10px;
     position: relative;
-}
-.portfolio-text{
+    font-size: 32px;
+    font-weight: 700;
+    color: #4e4039;
+    text-align: center;
+    font-family: "Open Sans", sans-serif;
+    position: relative;
+  }
+  .portfoliocontent hr {
     position: absolute;
-    top: 50%;
-    left: 45%;
-}
-
-.txt h5{
-    font-size: 20px;
-    color: #fff;
-    z-index: 999999999;
-    margin-top: 17px;
-}
-.portfolio-box img{
-    width: 90%;
-    margin: auto;
+    left: 38%;
+    border: solid 1px orange;
+    width: 90px;
+  }
+  .portfolio-list {
+    display: flex;
+    flex-wrap: wrap;
+    padding-left: 40px;
+  }
+  .portfolio-list .portfoliobox {
+    width: 100%;
+    height: auto;
+    justify-content: center;
+    box-sizing: border-box;
+    margin-bottom: 15px;
+  }
+  .portfoliocont {
+    position: relative;
+    overflow: hidden;
+  }
+  .porto-button {
+    text-align: center;
+    padding-bottom: 30px;
+    margin: 0 15px 15px 0;
+    padding: 10px 20px;
+    /* border: none; */
+  }
+  .porto-button button {
+    margin-left: 15px;
+    height: 30px;
+    border: none;
+    transition: 0.5s;
+    border-radius: 4px;
+    margin: 0 15px 15px 0;
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 12px;
+    line-height: 20px;
+    color: #444;
+    border-radius: 4px;
+    text-transform: uppercase;
+    background: #fff;
+    margin-bottom: 5px;
+    transition: all 0.3s;
+  }
+  .porto-button button:hover {
+    color: #f5f9fc;
+    background-color: #428bca;
+  }
+  .portfoliocont img {
+    display: flex;
+    width: 100%;
+    height: auto;
+    transition: all 0.5s ease;
+  }
+  .portfoliocont:hover img {
+    transform: scale(1.1);
+  }
+  .portfoliotext {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.3);
+    display: flex;
+    justify-content: center;
     align-items: center;
+    opacity: 0;
+    transition: all 0.5s ease;
+  }
+  .portfoliobox:hover .portfoliotext {
+    opacity: 1;
+  }
+  .portfoliobox:hover .portfolioinfo {
+    transform: translateY(0px);
+    transition: all 0.5s ease;
+    opacity: 1;
+  }
+  .portfolioinfo {
+    transform: translateY(-30px);
+  }
+  .portfolioinfo h5 {
+    color: #fff;
+    font-size: 22px;
+    text-align: center;
+    margin-bottom: 10px;
+  }
+  .portfolioinfo h6 {
+    color: #fff;
+    font-size: 18px;
+    text-align: center;
+  }
+  .portfolioicon {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 10px;
+    transition: 0.5s;
+  }
+  .portfolioicon a {
     display: block;
-    border-radius: 25px;
-    padding: 12px;
-}
-@media screen and (min-width:768px) {
-    .port-1{
-        display: flex;
+    width: 30px;
+    height: 30px;
+    background-color: #fff;
+    color: #428bca;
+    border-radius: 100%;
+    text-align: center;
+    text-decoration: none;
+    line-height: 30px;
+    margin: 0 5px;
+  }
+  .portfolioicon a:hover {
+    color: #f1f7fb;
+    background-color: #428bca;
+  }
+  
+  @media (min-width: 768px) {
+    #container {
+      padding-left: 15px;
+      padding-right: 15px;
+      margin-right: 15px;
+      height: auto;
     }
-}
-@media screen and (min-width:1200px) {
-    .port-2{
-        display: flex;
-        flex-wrap:wrap;
+    #portfolio {
+      display: flex;
+      background-color: #f5f9fc;
+      text-align: center;
     }
-    .portfolio-box {
-        width: 33.33%;
+    .portfoliocontent h2 {
+      justify-content: center;
+      font-size: 24px;
+      font-weight: 700;
+      padding-bottom: 0;
+      line-height: 1px;
+      margin-bottom: 15px;
+      color: #c2b7b1;
+    }
+    .portfoliocontent h1 {
+      position: relative;
+      font-size: 32px;
+      font-weight: 700;
+      color: #4e4039;
+    }
+    .portfoliocontent hr {
+      position: absolute;
+      left: 45%;
+      border: solid 1px orange;
+      width: 60px;
+      bottom: -130px;
+    }
+    .portfolio-list {
+      display: flex;
+      flex-wrap: wrap;
+      padding-left: 10px;
+      padding-right: 10px;
+    }
+    .portfolio-list .portfoliobox {
+      width: 45%;
+      height: auto;
+      box-sizing: border-box;
+      margin-bottom: 15px;
+      margin-left: 30px;
+    }
+    .portfoliocont {
+      position: relative;
+      overflow: hidden;
+    }
+    .porto-button {
+      text-align: center;
+      padding-bottom: 30px;
+      margin: 0 15px 15px 0;
+      padding: 10px 20px;
+      border: none;
+    }
+    .porto-button button {
+      margin-left: 15px;
+      height: 30px;
+      border: none;
+      transition: 0.5s;
+      border-radius: 4px;
+      margin: 0 15px 15px 0;
+      display: inline-block;
+      padding: 10px 20px;
+      font-size: 12px;
+      line-height: 20px;
+      color: #444;
+      border-radius: 4px;
+      text-transform: uppercase;
+      background: #fff;
+      margin-bottom: 5px;
+      transition: all 0.3s;
+    }
+    .porto-button button:hover {
+      color: #f5f9fc;
+      background-color: #428bca;
+    }
+    .portfoliocont img {
+      display: flex;
+      width: 100%;
+      height: auto;
+      transition: all 0.5s ease;
+    }
+    .portfoliocont:hover img {
+      transform: scale(1.1);
+    }
+    .portfoliotext {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0, 0, 0, 0.3);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      opacity: 0;
+      transition: all 0.5s ease;
+    }
+    .portfoliobox:hover .portfoliotext {
+      opacity: 1;
+    }
+    .portfoliobox:hover .portfolioinfo {
+      transform: translateY(0px);
+      transition: all 0.5s ease;
+      opacity: 1;
+    }
+    .portfolioinfo {
+      transform: translateY(-30px);
+    }
+    .portfolioinfo h5 {
+      color: #fff;
+      font-size: 22px;
+      text-align: center;
+      margin-bottom: 10px;
+    }
+    .portfolioinfo h6 {
+      color: #fff;
+      font-size: 18px;
+      text-align: center;
+    }
+    .portfolioicon {
+      display: flex;
+      justify-content: space-around;
+      margin-top: 10px;
+      transition: 0.5s;
+    }
+    .portfolioicon a {
+      display: block;
+      width: 30px;
+      height: 30px;
+      background-color: #fff;
+      color: #428bca;
+      border-radius: 100%;
+      text-align: center;
+      text-decoration: none;
+      line-height: 30px;
+      margin: 0 5px;
+    }
+    .portfolioicon a:hover {
+      color: #f1f7fb;
+      background-color: #428bca;
+    }
+  }
+  
+  @media (min-width: 1024px) {
+    .container {
+      padding-left: 15px;
+      padding-right: 15px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    #portfolio {
+      display: flex;
+      background-color: #f5f9fc;
+    }
+    .portfoliocontent h2 {
+      font-size: 24px;
+      font-weight: 700;
+      padding-bottom: 0;
+      line-height: 1px;
+      margin-bottom: 15px;
+      color: #c2b7b1;
+      text-align: center;
+      font-family: "Raleway", sans-serif;
+    }
+    .portfoliocontent h1 {
+      padding-bottom: 10px;
+      margin-bottom: 10px;
+      position: relative;
+      font-size: 32px;
+      font-weight: 700;
+      color: #4e4039;
+      text-align: center;
+      font-family: "Open Sans", sans-serif;
+    }
+    .portfoliocontent hr {
+      position: absolute;
+      width: 100px;
+      left: 47%;
+      border: solid 1px orange;
+    }
+    .portfolio-list {
+      display: flex;
+      flex-wrap: wrap;
+    }
+    .portfolio-list .portfoliobox {
+      width: 30%;
+      height: 270px;
+      padding-right: 15px;
+      box-sizing: border-box;
+      margin-bottom: 15px;
+    }
+    .portfoliocont {
+      position: relative;
+      overflow: hidden;
+    }
+    .porto-button {
+      text-align: center;
+      padding-bottom: 30px;
+      margin: 10px 15px 15px 0;
+      padding: 10px 20px;
+      line-height: 20px;
+      /* border: none; */
+    }
+    .porto-button button {
+      margin-left: 15px;
+      height: 30px;
+      border: none;
+      transition: 0.5s;
+      border-radius: 4px;
+      margin: 0 15px 15px 0;
+      display: inline-block;
+      padding: 10px 20px;
+      font-size: 12px;
+      line-height: 20px;
+      color: #444;
+      border-radius: 4px;
+      text-transform: uppercase;
+      background: #fff;
+      margin-bottom: 5px;
+      transition: all 0.3s;
+    }
+    .porto-button button:hover {
+      color: #f5f9fc;
+      background-color: #428bca;
+    }
+    .portfoliocont img {
+      display: flex;
+      height: 270px;
+      transition: all 0.5s ease;
+    }
+    .portfoliocont:hover img {
+      transform: scale(1.1);
+    }
+    .portfoliotext {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0, 0, 0, 0.3);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      opacity: 0;
+      transition: all 0.5s ease;
+    }
+    .portfoliobox:hover .portfoliotext {
+      opacity: 1;
+    }
+    .portfoliobox:hover .portfolioinfo {
+      transform: translateY(0px);
+      transition: all 0.5s ease;
+      opacity: 1;
+    }
+    .portfolioinfo {
+      transform: translateY(-30px);
+    }
+    .portfolioinfo h5 {
+      color: #fff;
+      font-size: 22px;
+      text-align: center;
+      margin-bottom: 10px;
+    }
+    .portfolioinfo h6 {
+      color: #fff;
+      font-size: 18px;
+      text-align: center;
+    }
+    .portfolioicon {
+      display: flex;
+      justify-content: space-around;
+      margin-top: 10px;
+      transition: 0.5s;
+    }
+    .portfolioicon a {
+      display: block;
+      width: 30px;
+      height: 30px;
+      background-color: #fff;
+      color: #428bca;
+      border-radius: 100%;
+      text-align: center;
+      text-decoration: none;
+      line-height: 30px;
+      margin: 0 5px;
+    }
+    .portfolioicon a:hover {
+      color: #f1f7fb;
+      background-color: #428bca;
+    }
+  }
+
+  /* faq starts */
+
+  
+.faq-flex {
+    width: 100%;
+    height: auto;
+    margin-top: 50px;
+    margin-bottom: 50px;
+  }
+  .faq-flex h2 {
+    font-size: 32px;
+    font-family: "Roboto", sans-serif;
+    text-align: center;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-bottom: 15px;
+    position: relative;
+  }
+  .faq-flex h3{
+    font-size: 24px;
+    font-weight: 700;
+    padding-bottom: 0;
+    text-align: center;
+    line-height: 1px;
+    margin-bottom: 15px;
+    color: #c2b7b1;
+    font-family: "Raleway", sans-serif
+  
+  }
+  .faq-flex hr {
+    position: absolute;
+    border: solid 1px deepskyblue;
+    width: 50px;
+    left: 43%;
+  }
+  .faq{
+    margin-top:40px ;
+  }
+  .faq  details p{
+    margin-top: 30px;
+    margin-bottom: 30px;
+    font-family: "Open Sans", sans-serif;
+      color: #212529;
+      font-size: 18px;
+      line-height: 24px;
+      font-weight: 600;  
+  }
+  .faq summary{
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 400;
+    cursor: pointer;
+    transition: 0.3s;
+    margin-top: 20px;
+    font-family: "Open Sans", sans-serif;
+  }
+  
+   summary:hover{
+    color: #eb5d1e;
+  }
+  
+  @media ( min-width:768px) {
+    
+  .faq-flex {
+    width: 100%;
+    height: auto;
+    margin-top: 50px;
+    margin-bottom: 50px;
+  }
+  .faq-flex h2 {
+    font-size: 32px;
+    font-family: "Roboto", sans-serif;
+    text-align: center;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-bottom: 15px;
+    position: relative;
+    margin-top: 40px;
+  }
+  .faq-flex h3{
+    font-size: 24px;
+    font-weight: 700;
+    padding-bottom: 0;
+    text-align: center;
+    line-height: 1px;
+    margin-bottom: 15px;
+    color: #c2b7b1;
+    font-family: "Raleway", sans-serif
+  
+  }
+  .faq-flex hr {
+    position: absolute;
+    border: solid 1px deepskyblue;
+    width: 50px;
+    left: 43%;
+  }
+  .faq{
+    margin-top:40px ;
+  }
+  .faq  details p{
+    margin-top: 30px;
+    margin-bottom: 30px;
+    font-family: "Open Sans", sans-serif;
+      color: #212529;
+      font-size: 18px;
+      line-height: 24px;
+      font-weight: 400;
+      font-weight: 600;
+      cursor: pointer;   
+  }
+  .faq summary{
+    font-size: 18px;
+    line-height: 24px;
+    font-weight: 400;
+    cursor: pointer;
+    transition: 0.3s;
+    margin-top: 20px;
+    font-family: "Open Sans", sans-serif;
+  }
+  
+   summary:hover{
+    color: #eb5d1e;
+  }
+  
+  }
+  @media (min-width:1024px) {
+  
+    .container {
+      padding-left: 15px;
+      padding-right: 15px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    .faq-flex {
+      width: 100%;
+      height: auto;
+      margin-top: 50px;
+      margin-bottom: 50px;
+    }
+    .faq-flex h2 {
+      font-size: 32px;
+      font-family: "Roboto", sans-serif;
+      text-align: center;
+      font-weight: bold;
+      text-transform: uppercase;
+      margin-bottom: 15px;
+      position: relative;
+      margin-top: 40px;
+    }
+    .faq-flex h3{
+      font-size: 24px;
+      font-weight: 700;
+      padding-bottom: 0;
+      text-align: center;
+      line-height: 1px;
+      margin-bottom: 15px;
+      color: #c2b7b1;
+      font-family: "Raleway", sans-serif
+    
+    }
+    .faq-flex hr {
+      position: absolute;
+      border: solid 1px deepskyblue;
+      width: 50px;
+      left: 43%;
+    }
+    .faq{
+      margin-top:40px ;
+    }
+    .faq  details p{
+      margin-top: 30px;
+      margin-bottom: 30px;
+      font-family: "Open Sans", sans-serif;
+        color: #212529;
+        font-size: 18px;
+        line-height: 24px;
+        font-weight: 400;
+        font-weight: 600;
+        cursor: pointer;   
+    }
+    .faq summary{
+      font-size: 18px;
+      line-height: 24px;
+      font-weight: 400;
+      cursor: pointer;
+      transition: 0.3s;
+      margin-top: 20px;
+      font-family: "Open Sans", sans-serif;
+      list-style: none;
+    }
+     summary:hover{
+      color: #eb5d1e;
     }
     
-}
+  }
+  
+  
